@@ -1,0 +1,7 @@
+---
+title: "Data from the Robert-Koch-Institut on COVID19 in Germany"
+date: "Last update: `r Sys.Date()`"
+output: github_document
+---
+
+<img src="plots/covid19-deu-rki-entwicklung.png">
