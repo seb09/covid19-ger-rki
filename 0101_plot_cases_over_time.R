@@ -75,7 +75,7 @@ d_plot_label <- d_plot_label_tot %>%
   mutate(color_text = if_else(Ranking == 99, color_text_total, color_text)) %>% 
   mutate(color_line = if_else(Ranking <= top_color, color_line_top, color_line_std)) %>% 
   mutate(color_line = if_else(Ranking == 99, color_line_total, color_line)) %>% 
-  mutate(pct = paste0(format(round(Anteil*100, 3), nsmall = 3),"%")) %>% 
+  mutate(pct = paste0(format(round(Anteil*100, 2), nsmall = 2),"%")) %>% 
   mutate(
     tot = format(Fallzahl) %>%
       str_replace_all(" ", "<span style='color:#ffffff00;'>0</span>") %>% 
