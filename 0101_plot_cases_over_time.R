@@ -27,7 +27,6 @@ d_total <- corona_rki %>%
 
 d_plot <- corona_rki %>% 
   bind_rows(d_total) %>% 
-  replace_na(list(Todeszahl = 0)) %>% 
   mutate(Bundesland = fct_reorder2(Bundesland, Datum, Fallzahl))
 
 # prepare labels ---------------------------------------------------------------

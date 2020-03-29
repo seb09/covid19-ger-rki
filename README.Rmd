@@ -4,8 +4,23 @@ date: "Last update: `r Sys.Date()`"
 output: github_document
 ---
 
-This repository contains the daily data on COVID19 in Germany and its federal states that is published by the Robert-Koch-Institut.
+This repository contains data on reported COVID19 cases in Germany and its federal states that is published daily by the Robert-Koch-Institut (RKI).
 
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+corona_rki <- read_csv("data/corona_deu_rki.csv")
+corona_rki
+```
+
+
+Data is downloaded each day at 11am from the [website of the RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html) (and updated again at 11pm). Population sizes of the federal states were scraped from [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_deutschen_Bundesl%C3%A4nder_nach_Bev%C3%B6lkerung) and are also available in this repo.
+
+```{r, message=FALSE, warning=FALSE}
+population <- read_csv("data/einwohner_bundesland.csv")
+population
+```
+
+I'll try to update the data daily and produce a plot from time to time. My plots will be in German. You're welcome to use them.
 
 ***
 
