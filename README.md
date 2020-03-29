@@ -1,8 +1,8 @@
-Data from the Robert-Koch-Institut on COVID19 in Germany
+Data from the Robert-Koch-Institut on COVID-19 in Germany
 ================
 Last update: 2020-03-29
 
-This repository contains data on reported COVID19 cases in Germany and
+This repository contains data on reported COVID-19 cases in Germany and
 its federal states that is published daily by the Robert-Koch-Institut
 (RKI).
 
@@ -61,7 +61,7 @@ population
     ## 17 Deutschland             83019213
 
 I’ll try to update the data daily and produce a plot from time to time.
-My plots will be in German. You’re welcome to use them.
+Most plots will probably be in German. You’re welcome to use them.
 
 -----
 

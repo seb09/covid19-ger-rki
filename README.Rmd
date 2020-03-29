@@ -1,10 +1,10 @@
 ---
-title: "Data from the Robert-Koch-Institut on COVID19 in Germany"
+title: "Data from the Robert-Koch-Institut on COVID-19 in Germany"
 date: "Last update: `r Sys.Date()`"
 output: github_document
 ---
 
-This repository contains data on reported COVID19 cases in Germany and its federal states that is published daily by the Robert-Koch-Institut (RKI).
+This repository contains data on reported COVID-19 cases in Germany and its federal states that is published daily by the Robert-Koch-Institut (RKI).
 
 ```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -20,7 +20,7 @@ population <- read_csv("data/einwohner_bundesland.csv")
 population
 ```
 
-I'll try to update the data daily and produce a plot from time to time. My plots will be in German. You're welcome to use them.
+I'll try to update the data daily and produce a plot from time to time. Most plots will probably be in German. You're welcome to use them.
 
 ***
 
