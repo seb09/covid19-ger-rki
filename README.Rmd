@@ -4,4 +4,9 @@ date: "Last update: `r Sys.Date()`"
 output: github_document
 ---
 
+This repository contains the daily data on COVID19 in Germany and its federal states that is published by the Robert-Koch-Institut.
+
+
+***
+
 <img src="plots/covid19-deu-rki-entwicklung.png">
