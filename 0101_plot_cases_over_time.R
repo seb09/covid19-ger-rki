@@ -3,7 +3,6 @@ library(tidyverse)
 library(cowplot)
 library(ggtext)
 library(lubridate)
-library(plotly)
 
 theme_set(theme_minimal(base_size = 12))
 
@@ -11,7 +10,8 @@ theme_set(theme_minimal(base_size = 12))
 
 pop <- read_csv("data/einwohner_bundesland.csv")
 corona_rki <- read_csv("data/corona_deu_rki.csv") %>% 
-  left_join(pop, by = "Bundesland")
+  left_join(pop, by = "Bundesland") %>% 
+  filter(Fallzahl > 0)
 
 
 # data for plotting ------------------------------------------------------------
