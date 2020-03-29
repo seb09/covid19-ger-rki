@@ -48,9 +48,9 @@ lab_coord <- 10^seq(lab_min, lab_max, length.out = nlevels(d_plot$Bundesland))
 
 # set colors
 #colorRamp(c("#FFFFFF", "#374E55"))(0.87) %>% rgb(maxColorValue = 255)
-color_text_total <- "#51656B"
+color_text_total <- "#30453C"
 color_line_total <- colorRamp(c("#FFFFFF", color_text_total))(0.9) %>% rgb(maxColorValue = 255)
-#colorRamp(c("#79AF97", "#000000"))(0.1) %>% rgb(maxColorValue = 255)
+#colorRamp(c("#FFFFFF", "#79AF97", "#000000"))(0.8) %>% rgb(maxColorValue = 255)
 color_text_top <- "#6C9D87"
 color_line_top <- colorRamp(c("#FFFFFF", color_text_top))(1) %>% rgb(maxColorValue = 255)
 color_text_std <- "#000000"
@@ -222,7 +222,7 @@ p_main <- ggplot() +
     ),
     caption = glue::glue(
       "Quelle: Robert-Koch-Institut",
-      "Daten seit dem {min(d_plot$Datum) %>% format(\"%d.%m.%Y\")}, letzte Aktualisierung: {max(d_plot$Datum) %>% format(\"%d.%m.%Y\")}",
+      "Daten seit dem {min(d_plot$Datum) %>% format(\"%d.%m.%Y\")}, letzte Aktualisierung am {max(d_plot$Datum) %>% format(\"%d.%m.%Y\")}",
       "github.com/seb09/covid19-ger-rki",
       .sep = "\n"
     )
