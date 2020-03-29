@@ -12,19 +12,19 @@ corona_rki <- read_csv("data/corona_deu_rki.csv")
 corona_rki
 ```
 
-    ## # A tibble: 410 x 4
-    ##    Datum      Bundesland             Fallzahl Todeszahl
-    ##    <date>     <chr>                     <dbl>     <dbl>
-    ##  1 2020-03-04 Brandenburg                   1         0
-    ##  2 2020-03-04 Berlin                        7         0
-    ##  3 2020-03-04 Baden-Württemberg            50         0
-    ##  4 2020-03-04 Bayern                       48         0
-    ##  5 2020-03-04 Bremen                        3         0
-    ##  6 2020-03-04 Hessen                       12         0
-    ##  7 2020-03-04 Hamburg                       3         0
-    ##  8 2020-03-04 Mecklenburg-Vorpommern        4         0
-    ##  9 2020-03-04 Niedersachsen                 7         0
-    ## 10 2020-03-04 Nordrhein-Westfalen         115         0
+    ## # A tibble: 410 x 6
+    ##    Datum      Bundesland  Fallzahl Todeszahl Fallzahl_neu Todeszahl_neu
+    ##    <date>     <chr>          <dbl>     <dbl>        <dbl>         <dbl>
+    ##  1 2020-03-04 Brandenburg        1         0            0             0
+    ##  2 2020-03-05 Brandenburg        1         0            0             0
+    ##  3 2020-03-06 Brandenburg        2         0            1             0
+    ##  4 2020-03-07 Brandenburg        2         0            0             0
+    ##  5 2020-03-08 Brandenburg        4         0            2             0
+    ##  6 2020-03-09 Brandenburg        6         0            2             0
+    ##  7 2020-03-10 Brandenburg        9         0            3             0
+    ##  8 2020-03-11 Brandenburg       24         0           15             0
+    ##  9 2020-03-12 Brandenburg       30         0            6             0
+    ## 10 2020-03-13 Brandenburg       44         0           14             0
     ## # … with 400 more rows
 
 Data is downloaded each day at 11am from the [website of the
@@ -39,7 +39,7 @@ population <- read_csv("data/einwohner_bundesland.csv")
 population
 ```
 
-    ## # A tibble: 17 x 2
+    ## # A tibble: 16 x 2
     ##    Bundesland             Einwohner
     ##    <chr>                      <dbl>
     ##  1 Baden-Württemberg       11069533
@@ -58,7 +58,6 @@ population
     ## 14 Sachsen-Anhalt           2208321
     ## 15 Schleswig-Holstein       2896712
     ## 16 Thüringen                2143145
-    ## 17 Deutschland             83019213
 
 I’ll try to update the data daily and produce a plot from time to time.
 Most plots will probably be in German. You’re welcome to use them.
