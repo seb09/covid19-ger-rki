@@ -195,7 +195,7 @@ p_main <- ggplot() +
   scale_x_date(
     breaks = seq(ymd("2020-03-09"), ymd(max(d_plot$Datum)), by = "weeks"),
     minor_breaks = seq(ymd("2020-03-04"), ymd(max(d_plot$Datum)), by = "days"),
-    date_labels = "%d.%m",
+    date_labels = "%d.%m.",
     expand = expansion(mult = c(mult_x[1],0))
   ) +
   scale_y_continuous(
