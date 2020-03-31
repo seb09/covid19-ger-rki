@@ -10,7 +10,7 @@ its federal states that is published daily by the Robert-Koch-Institut
 library(tidyverse)
 corona_rki <- read_csv("data/corona_deu_rki.csv")
 corona_rki %>% 
-  arrange(-as.numeric(Datum), Bundesland) %>% 
+  arrange(desc(Datum), Bundesland) %>% 
   print(n = 16)
 ```
 
