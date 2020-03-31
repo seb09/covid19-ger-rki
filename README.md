@@ -10,7 +10,8 @@ its federal states that is published daily by the Robert-Koch-Institut
 library(tidyverse)
 corona_rki <- read_csv("data/corona_deu_rki.csv")
 corona_rki %>% 
-  arrange(-as.numeric(Datum), Bundesland)
+  arrange(-as.numeric(Datum), Bundesland) %>% 
+  print(n = 16)
 ```
 
     ## # A tibble: 442 x 6
@@ -26,7 +27,13 @@ corona_rki %>%
     ##  8 2020-03-31 Mecklenburg-Vo…      366         1           10             0
     ##  9 2020-03-31 Niedersachsen       4063        34          331             8
     ## 10 2020-03-31 Nordrhein-West…    13225       117         1047            16
-    ## # … with 432 more rows
+    ## 11 2020-03-31 Rheinland-Pfalz     2726        19          142             1
+    ## 12 2020-03-31 Saarland             782         7           76             0
+    ## 13 2020-03-31 Sachsen             1882        12           87             3
+    ## 14 2020-03-31 Sachsen-Anhalt       680         6           88             4
+    ## 15 2020-03-31 Schleswig-Hols…     1120         9           71             2
+    ## 16 2020-03-31 Thüringen            784         6           65             1
+    ## # … with 426 more rows
 
 Data is downloaded each day at 11am from the [website of the
 RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html)
