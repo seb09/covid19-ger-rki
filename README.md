@@ -1,6 +1,6 @@
 Data from the Robert-Koch-Institut on COVID-19 in Germany
 ================
-Last update: 2020-03-30
+Last update: 2020-03-31
 
 This repository contains data on reported COVID-19 cases in Germany and
 its federal states that is published daily by the Robert-Koch-Institut
@@ -13,20 +13,20 @@ corona_rki %>%
   arrange(-as.numeric(Datum), Bundesland)
 ```
 
-    ## # A tibble: 426 x 6
+    ## # A tibble: 442 x 6
     ##    Datum      Bundesland      Fallzahl Todeszahl Fallzahl_neu Todeszahl_neu
     ##    <date>     <chr>              <dbl>     <dbl>        <dbl>         <dbl>
-    ##  1 2020-03-30 Baden-Württemb…    10943       119         1149            18
-    ##  2 2020-03-30 Bayern             13989       127         1108            20
-    ##  3 2020-03-30 Berlin              2464        11          104             2
-    ##  4 2020-03-30 Brandenburg          761         2           40             1
-    ##  5 2020-03-30 Bremen               286         2           11             0
-    ##  6 2020-03-30 Hamburg             2053         5          207             1
-    ##  7 2020-03-30 Hessen              3091        13          486             4
-    ##  8 2020-03-30 Mecklenburg-Vo…      356         1            8             0
-    ##  9 2020-03-30 Niedersachsen       3732        26          282             5
-    ## 10 2020-03-30 Nordrhein-West…    12178       101          778             3
-    ## # … with 416 more rows
+    ##  1 2020-03-31 Baden-Württemb…    12334       165         1391            46
+    ##  2 2020-03-31 Bayern             14810       162          821            35
+    ##  3 2020-03-31 Berlin              2575        13          111             2
+    ##  4 2020-03-31 Brandenburg          798         2           37             0
+    ##  5 2020-03-31 Bremen               294         4            8             2
+    ##  6 2020-03-31 Hamburg             2191         9          138             4
+    ##  7 2020-03-31 Hessen              3283        17          192             4
+    ##  8 2020-03-31 Mecklenburg-Vo…      366         1           10             0
+    ##  9 2020-03-31 Niedersachsen       4063        34          331             8
+    ## 10 2020-03-31 Nordrhein-West…    13225       117         1047            16
+    ## # … with 432 more rows
 
 Data is downloaded each day at 11am from the [website of the
 RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html)
