@@ -17,28 +17,30 @@ corona_rki %>%
     ## # A tibble: 458 x 6
     ##    Datum      Bundesland      Fallzahl Todeszahl Fallzahl_neu Todeszahl_neu
     ##    <date>     <chr>              <dbl>     <dbl>        <dbl>         <dbl>
-    ##  1 2020-03-31 Baden-Württemb…    13410       197         1076            32
-    ##  2 2020-03-31 Bayern             16497       225         1687            63
-    ##  3 2020-03-31 Berlin              2754        16          179             3
-    ##  4 2020-03-31 Brandenburg          881         4           83             2
-    ##  5 2020-03-31 Bremen               311         5           17             1
-    ##  6 2020-03-31 Hamburg             2311        14          120             5
-    ##  7 2020-03-31 Hessen              3445        21          162             4
-    ##  8 2020-03-31 Mecklenburg-Vo…      406         3           40             2
-    ##  9 2020-03-31 Niedersachsen       4382        42          319             8
-    ## 10 2020-03-31 Nordrhein-West…    14351       134         1126            17
-    ## 11 2020-03-31 Rheinland-Pfalz     2899        23          173             4
-    ## 12 2020-03-31 Saarland             829         8           47             1
-    ## 13 2020-03-31 Sachsen             2034        17          152             5
-    ## 14 2020-03-31 Sachsen-Anhalt       750         7           70             1
-    ## 15 2020-03-31 Schleswig-Hols…     1246        10          126             1
-    ## 16 2020-03-31 Thüringen            860         6           76             0
+    ##  1 2020-04-01 Baden-Württemb…    13410       197         1076            32
+    ##  2 2020-04-01 Bayern             16497       225         1687            63
+    ##  3 2020-04-01 Berlin              2754        16          179             3
+    ##  4 2020-04-01 Brandenburg          881         4           83             2
+    ##  5 2020-04-01 Bremen               311         5           17             1
+    ##  6 2020-04-01 Hamburg             2311        14          120             5
+    ##  7 2020-04-01 Hessen              3445        21          162             4
+    ##  8 2020-04-01 Mecklenburg-Vo…      406         3           40             2
+    ##  9 2020-04-01 Niedersachsen       4382        42          319             8
+    ## 10 2020-04-01 Nordrhein-West…    14351       134         1126            17
+    ## 11 2020-04-01 Rheinland-Pfalz     2899        23          173             4
+    ## 12 2020-04-01 Saarland             829         8           47             1
+    ## 13 2020-04-01 Sachsen             2034        17          152             5
+    ## 14 2020-04-01 Sachsen-Anhalt       750         7           70             1
+    ## 15 2020-04-01 Schleswig-Hols…     1246        10          126             1
+    ## 16 2020-04-01 Thüringen            860         6           76             0
     ## # … with 442 more rows
 
 Data is downloaded each day at 11am from the [website of the
 RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html)
-(and updated again at 11pm). Population sizes of the federal states were
-scraped from
+(and updated again at 11pm). The time stamp refers to the day when the
+data was downloaded.
+
+Population sizes of the federal states were scraped from
 [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_deutschen_Bundesl%C3%A4nder_nach_Bev%C3%B6lkerung)
 and are also available in this repo.
 

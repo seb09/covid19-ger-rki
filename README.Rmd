@@ -15,7 +15,9 @@ corona_rki %>%
 ```
 
 
-Data is downloaded each day at 11am from the [website of the RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html) (and updated again at 11pm). Population sizes of the federal states were scraped from [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_deutschen_Bundesl%C3%A4nder_nach_Bev%C3%B6lkerung) and are also available in this repo.
+Data is downloaded each day at 11am from the [website of the RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html) (and updated again at 11pm). The time stamp refers to the day when the data was downloaded.
+
+Population sizes of the federal states were scraped from [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_deutschen_Bundesl%C3%A4nder_nach_Bev%C3%B6lkerung) and are also available in this repo.
 
 ```{r, message=FALSE, warning=FALSE}
 population <- read_csv("data/einwohner_bundesland.csv")
