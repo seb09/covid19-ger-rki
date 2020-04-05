@@ -31,6 +31,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Brandenburg,995,7,114,3
 2020-04-03,Brandenburg,1075,9,80,2
 2020-04-04,Brandenburg,1211,12,136,3
+2020-04-05,Brandenburg,1305,17,94,5
 2020-03-04,Berlin,7,0,4,0
 2020-03-05,Berlin,13,0,6,0
 2020-03-06,Berlin,19,0,6,0
@@ -63,6 +64,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Berlin,2970,19,216,3
 2020-04-03,Berlin,3202,20,232,1
 2020-04-04,Berlin,3471,22,269,2
+2020-04-05,Berlin,3613,24,142,2
 2020-03-04,Baden-Württemberg,50,0,22,0
 2020-03-05,Baden-Württemberg,73,0,23,0
 2020-03-06,Baden-Württemberg,96,0,23,0
@@ -95,6 +97,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Baden-Württemberg,14662,241,1252,44
 2020-04-03,Baden-Württemberg,16059,285,1397,44
 2020-04-04,Baden-Württemberg,17014,316,955,31
+2020-04-05,Baden-Württemberg,18614,367,1600,51
 2020-03-04,Bayern,48,0,11,0
 2020-03-05,Bayern,70,0,22,0
 2020-03-06,Bayern,117,0,47,0
@@ -127,6 +130,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Bayern,18496,268,1999,43
 2020-04-03,Bayern,20237,307,1741,39
 2020-04-04,Bayern,21908,349,1671,42
+2020-04-05,Bayern,23846,396,1938,47
 2020-03-04,Bremen,3,0,1,0
 2020-03-05,Bremen,3,0,0,0
 2020-03-06,Bremen,4,0,1,0
@@ -159,6 +163,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Bremen,327,6,16,1
 2020-04-03,Bremen,341,6,14,0
 2020-04-04,Bremen,354,6,13,0
+2020-04-05,Bremen,394,6,40,0
 2020-03-04,Hessen,12,0,0,0
 2020-03-05,Hessen,14,0,2,0
 2020-03-06,Hessen,16,0,2,0
@@ -191,6 +196,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Hessen,3707,27,262,6
 2020-04-03,Hessen,3993,33,286,6
 2020-04-04,Hessen,4279,42,286,9
+2020-04-05,Hessen,4575,56,296,14
 2020-03-04,Hamburg,3,0,1,0
 2020-03-05,Hamburg,5,0,2,0
 2020-03-06,Hamburg,11,0,6,0
@@ -223,6 +229,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Hamburg,2406,14,95,0
 2020-04-03,Hamburg,2596,16,190,2
 2020-04-04,Hamburg,2697,16,101,0
+2020-04-05,Hamburg,2945,19,248,3
 2020-03-04,Mecklenburg-Vorpommern,4,0,4,0
 2020-03-05,Mecklenburg-Vorpommern,4,0,0,0
 2020-03-06,Mecklenburg-Vorpommern,5,0,1,0
@@ -255,6 +262,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Mecklenburg-Vorpommern,438,3,32,0
 2020-04-03,Mecklenburg-Vorpommern,468,4,30,1
 2020-04-04,Mecklenburg-Vorpommern,501,5,33,1
+2020-04-05,Mecklenburg-Vorpommern,523,5,22,0
 2020-03-04,Niedersachsen,7,0,5,0
 2020-03-05,Niedersachsen,18,0,11,0
 2020-03-06,Niedersachsen,18,0,0,0
@@ -287,6 +295,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Niedersachsen,4695,45,313,3
 2020-04-03,Niedersachsen,5081,65,386,20
 2020-04-04,Niedersachsen,5571,85,490,20
+2020-04-05,Niedersachsen,5712,89,141,4
 2020-03-04,Nordrhein-Westfalen,115,0,12,0
 2020-03-05,Nordrhein-Westfalen,181,0,66,0
 2020-03-06,Nordrhein-Westfalen,329,0,148,0
@@ -319,6 +328,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Nordrhein-Westfalen,15427,161,1076,27
 2020-04-03,Nordrhein-Westfalen,16606,178,1179,17
 2020-04-04,Nordrhein-Westfalen,17885,200,1279,22
+2020-04-05,Nordrhein-Westfalen,18735,245,850,45
 2020-03-04,Rheinland-Pfalz,7,0,5,0
 2020-03-05,Rheinland-Pfalz,8,0,1,0
 2020-03-06,Rheinland-Pfalz,10,0,2,0
@@ -351,6 +361,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Rheinland-Pfalz,3132,26,233,3
 2020-04-03,Rheinland-Pfalz,3362,26,230,0
 2020-04-04,Rheinland-Pfalz,3504,29,142,3
+2020-04-05,Rheinland-Pfalz,3663,32,159,3
 2020-03-04,Saarland,1,0,1,0
 2020-03-05,Saarland,1,0,0,0
 2020-03-06,Saarland,2,0,1,0
@@ -383,6 +394,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Saarland,1020,11,191,3
 2020-04-03,Saarland,1079,12,59,1
 2020-04-04,Saarland,1265,14,186,2
+2020-04-05,Saarland,1358,14,93,0
 2020-03-04,Schleswig-Holstein,2,0,0,0
 2020-03-05,Schleswig-Holstein,7,0,5,0
 2020-03-06,Schleswig-Holstein,7,0,0,0
@@ -415,6 +427,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Schleswig-Holstein,1335,11,89,1
 2020-04-03,Schleswig-Holstein,1443,15,108,4
 2020-04-04,Schleswig-Holstein,1559,17,116,2
+2020-04-05,Schleswig-Holstein,1631,18,72,1
 2020-03-04,Sachsen,1,0,0,0
 2020-03-05,Sachsen,1,0,0,0
 2020-03-06,Sachsen,2,0,1,0
@@ -447,6 +460,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Sachsen,2183,18,149,1
 2020-04-03,Sachsen,2336,21,153,3
 2020-04-04,Sachsen,2591,24,255,3
+2020-04-05,Sachsen,2741,32,150,8
 2020-03-04,Thüringen,1,0,0,0
 2020-03-05,Thüringen,1,0,0,0
 2020-03-06,Thüringen,1,0,0,0
@@ -479,6 +493,7 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Thüringen,925,7,65,1
 2020-04-03,Thüringen,982,9,57,2
 2020-04-04,Thüringen,1072,10,90,1
+2020-04-05,Thüringen,1140,10,68,0
 2020-03-10,Sachsen-Anhalt,7,0,NA,0
 2020-03-11,Sachsen-Anhalt,15,0,8,0
 2020-03-12,Sachsen-Anhalt,27,0,12,0
@@ -505,3 +520,4 @@ Datum,Bundesland,Fallzahl,Todeszahl,Fallzahl_neu,Todeszahl_neu
 2020-04-02,Sachsen-Anhalt,804,8,54,1
 2020-04-03,Sachsen-Anhalt,836,11,32,3
 2020-04-04,Sachsen-Anhalt,896,11,60,0
+2020-04-05,Sachsen-Anhalt,919,12,23,1
