@@ -209,12 +209,12 @@ p_main <- ggplot() +
   labs(
     x = "Datum",
     y = glue::glue(
-      "Gesamtanzahl gemeldeter Infektionen",
+      "Gesamtzahl gemeldeter Infektionen",
       "(logarithmische Skala)",
       .sep = "\n"
     ),
     title = glue::glue(
-      "Entwicklung der Anzahl gemeldeter COVID-19 Fälle in **<span style='color:{color_text_total};'>Deutschland</span>**"
+      "Entwicklung der Gesamtzahl gemeldeter COVID-19 Fälle in **<span style='color:{color_text_total};'>Deutschland</span>**"
     ),
     subtitle = glue::glue(
       "Die {top_color} Bundesländer mit dem **<span style='color:{color_text_top};'>höchsten infizierten Bevölkerungsanteil</span>** sind farblich markiert"

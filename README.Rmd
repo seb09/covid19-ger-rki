@@ -24,8 +24,23 @@ population <- read_csv("data/einwohner_bundesland.csv")
 population
 ```
 
-I'll try to update the data daily and produce a plot from time to time. Most plots will probably be in German. You're welcome to use them.
+I'll try to update the data daily. You can import the most recent version directly from GitHub.
+
+```{r, eval=FALSE}
+library(readr)
+corona_rki <- read_csv("https://raw.githubusercontent.com/seb09/covid19-ger-rki/master/data/corona_deu_rki.csv")
+```
+
+I will also produce a plot from time to time, probably in German. You're welcome to use them.
 
 ***
 
 <img src="plots/covid19-deu-rki-entwicklung.png">
+
+[Full size](https://github.com/seb09/covid19-ger-rki/raw/master/plots/covid19-deu-rki-entwicklung.png)
+
+***
+
+<img src="plots/covid19-deu-rki-faelle-pro-tag.png">
+
+[Full size](https://github.com/seb09/covid19-ger-rki/raw/master/plots/cplots/covid19-deu-rki-faelle-pro-tag.png)
