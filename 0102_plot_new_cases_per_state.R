@@ -115,12 +115,12 @@ plot_per_state <- function(yvar, title){
     ) +
     theme(
       legend.position = "none",
-      strip.text = element_text(size = 9),
+      strip.text = element_text(size = 10),
       panel.grid.minor.x = element_blank(),
       panel.grid.minor.y = element_blank(),
       #axis.title.x = element_text(margin = margin(t = 0.5, unit = "lines")),
       axis.title.x = element_blank(),
-      axis.text.x = element_text(size = 7),
+      axis.text.x = element_text(size = 8),
       #axis.title.y = element_text(margin = margin(r = 0.5, unit = "lines")),
       axis.title.y = element_blank(),
       plot.title = element_markdown(),
