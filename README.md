@@ -92,4 +92,4 @@ size](https://github.com/seb09/covid19-ger-rki/raw/master/plots/covid19-deu-rki-
 <img src="plots/covid19-deu-rki-faelle-pro-tag.png">
 
 [Full
-size](https://github.com/seb09/covid19-ger-rki/raw/master/plots/cplots/covid19-deu-rki-faelle-pro-tag.png)
+size](https://github.com/seb09/covid19-ger-rki/raw/master/plots/covid19-deu-rki-faelle-pro-tag.png)
