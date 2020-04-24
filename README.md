@@ -1,6 +1,6 @@
 Data from the Robert-Koch-Institut on COVID-19 in Germany
 ================
-Last update: 2020-04-23
+Last update: 2020-04-24
 
 This repository contains data on reported COVID-19 cases in Germany and
 its federal states that is published daily by the Robert-Koch-Institut
@@ -14,26 +14,26 @@ corona_rki %>%
   print(n = 16)
 ```
 
-    ## # A tibble: 810 x 6
+    ## # A tibble: 826 x 6
     ##    Datum      Bundesland      Fallzahl Todeszahl Fallzahl_neu Todeszahl_neu
     ##    <date>     <chr>              <dbl>     <dbl>        <dbl>         <dbl>
-    ##  1 2020-04-23 Baden-Württemb…    29443      1113          545            50
-    ##  2 2020-04-23 Bayern             39395      1476          581            52
-    ##  3 2020-04-23 Berlin              5324       105           12             0
-    ##  4 2020-04-23 Brandenburg         2447        84           58            10
-    ##  5 2020-04-23 Bremen               672        27           48             1
-    ##  6 2020-04-23 Hamburg             4286       113           82            22
-    ##  7 2020-04-23 Hessen              7593       286          213            21
-    ##  8 2020-04-23 Mecklenburg-Vo…      659        15            3             0
-    ##  9 2020-04-23 Niedersachsen       9391       340          155            12
-    ## 10 2020-04-23 Nordrhein-West…    30584       999          399            35
-    ## 11 2020-04-23 Rheinland-Pfalz     5643       131           50             9
-    ## 12 2020-04-23 Saarland            2395        99           28             2
-    ## 13 2020-04-23 Sachsen             4327       127           54             5
-    ## 14 2020-04-23 Sachsen-Anhalt      1425        34           30             1
-    ## 15 2020-04-23 Schleswig-Hols…     2530        84           34             5
-    ## 16 2020-04-23 Thüringen           1932        61           60           -10
-    ## # … with 794 more rows
+    ##  1 2020-04-24 Baden-Württemb…    29792      1153          349            40
+    ##  2 2020-04-24 Bayern             39939      1525          544            49
+    ##  3 2020-04-24 Berlin              5459       112          135             7
+    ##  4 2020-04-24 Brandenburg         2536        90           89             6
+    ##  5 2020-04-24 Bremen               707        27           35             0
+    ##  6 2020-04-24 Hamburg             4358       122           72             9
+    ##  7 2020-04-24 Hessen              7712       296          119            10
+    ##  8 2020-04-24 Mecklenburg-Vo…      661        16            2             1
+    ##  9 2020-04-24 Niedersachsen       9544       364          153            24
+    ## 10 2020-04-24 Nordrhein-West…    31106      1052          522            53
+    ## 11 2020-04-24 Rheinland-Pfalz     5731       136           88             5
+    ## 12 2020-04-24 Saarland            2445       105           50             6
+    ## 13 2020-04-24 Sachsen             4377       135           50             8
+    ## 14 2020-04-24 Sachsen-Anhalt      1436        35           11             1
+    ## 15 2020-04-24 Schleswig-Hols…     2557        88           27             4
+    ## 16 2020-04-24 Thüringen           2023        65           91             4
+    ## # … with 810 more rows
 
 Data is downloaded each day at 11am from the [website of the
 RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html)
