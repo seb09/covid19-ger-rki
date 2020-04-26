@@ -103,7 +103,7 @@ plot_per_state <- function(yvar, title){
     geom_col() +
     facet_geo(~code, grid = de_grid, label = "name2") +
     scale_x_date(
-      breaks = seq(ymd("2020-03-09"), ymd(max(d_plot$Datum)), by = "weeks"),
+      breaks = seq(ymd("2020-03-09"), ymd(max(d_plot$Datum)), by = 14),
       minor_breaks = seq(ymd("2020-03-04"), ymd(max(d_plot$Datum)), by = "days"),
       date_labels = "%d.%m.",
       expand = expansion(add = c(0,1))

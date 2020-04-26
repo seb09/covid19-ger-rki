@@ -40,10 +40,10 @@ d_plot_end <- d_plot %>%
   mutate(Anteil = Fallzahl/Einwohner)
 
 # evenly spread label coordinates
-y_log <- log2(d_plot$Fallzahl)
-lab_min <- min(y_log) + 0.5 * diff(range(y_log))
-lab_max <- max(y_log)
-lab_coord <- 2^seq(lab_min, lab_max, length.out = nlevels(d_plot$Bundesland))
+y <- d_plot$Fallzahl
+lab_min <- min(y) + 0.5 * diff(range(y))
+lab_max <- max(y)
+lab_coord <- seq(lab_min, lab_max, length.out = nlevels(d_plot$Bundesland))
 
 # set colors
 #colorRamp(c("#FFFFFF", "#374E55"))(0.87) %>% rgb(maxColorValue = 255)
@@ -180,12 +180,12 @@ p_main <- ggplot() +
     label.padding = grid::unit(rep(0, 4), "pt"),
     show.legend = FALSE
   ) +
-  geom_segment(
-    data = d_plot_label,
-    mapping = aes(x = Datum, xend = pos_x + 0.5, y = Fallzahl, yend =pos_y),
-    alpha = 0.1, color = "#000000",
-    inherit.aes = FALSE
-  ) +
+  # geom_segment(
+  #   data = d_plot_label,
+  #   mapping = aes(x = Datum, xend = pos_x + 0.5, y = Fallzahl, yend =pos_y),
+  #   alpha = 0.1, color = "#000000",
+  #   inherit.aes = FALSE
+  # ) +
   p_geom_std_line +
   p_geom_std_pt +
   p_geom_top_line +
@@ -198,15 +198,9 @@ p_main <- ggplot() +
     date_labels = "%d.%m.",
     expand = expansion(mult = c(mult_x[1],0))
   ) +
-  # scale_y_continuous(
-  #   trans = scales::log10_trans(),
-  #   breaks = 10^c(0:5),
-  #   expand = expansion(mult = mult_y),
-  #   labels = function(x) scales::comma(x, big.mark = ".", accuracy = 1, decimal.mark = ",")
-  # ) +
   scale_y_continuous(
-    trans = scales::log2_trans(),
-    breaks = c(0.001,0.005,0.01,0.025,0.05,0.1,0.25,0.5,1,2.5,5,10,25,50,100,250)*1000,
+    #trans = scales::log10_trans(),
+    breaks = c(1, seq(2e4, 2e5, 2e4)),
     expand = expansion(mult = mult_y),
     labels = function(x) scales::comma(x, big.mark = ".", accuracy = 1, decimal.mark = ",")
   ) +
@@ -216,7 +210,7 @@ p_main <- ggplot() +
     x = "Datum",
     y = glue::glue(
       "Gesamtzahl gemeldeter Infektionen",
-      "(logarithmische Skala)",
+      #"(logarithmische Skala)",
       .sep = "\n"
     ),
     title = glue::glue(
@@ -247,8 +241,13 @@ p_main
 p_sub <- ggplot() +
   p_geom_std_line +
   p_geom_top_line +
-  #p_geom_total_line +
-  labs(title = "Original Skala") +
+  p_geom_total_line +
+  scale_y_continuous(
+    trans = scales::log10_trans(),
+    breaks = 10^c(0:5),
+    labels = function(x) scales::comma(x, big.mark = ".", accuracy = 1, decimal.mark = ",")
+  ) +
+  labs(title = "Logarithmische Skala") +
   theme(
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
@@ -258,16 +257,16 @@ p_sub <- ggplot() +
     axis.title.x = element_blank(),
     axis.title.y = element_blank(),
     axis.text.x = element_blank(),
-    axis.text.y = element_blank(),
+    #axis.text.y = element_blank(),
     plot.title = element_text(size = 10)
   )
 
 p <- ggdraw() +
   draw_plot(p_main) +
-  draw_plot(p_sub, x = 0.98, y = 0.12, width = 0.23, height = 0.36, hjust = 1, vjust = 0)
+  draw_plot(p_sub, x = 0.98, y = 0.12, width = 0.23, height = 0.34, hjust = 1, vjust = 0)
 
 p
 
-ggsave(fs::path("plots", "covid19-deu-rki-entwicklung.png"), p, width = 10, height = 6.66, dpi = 200, scale = 1.3)
+ggsave(fs::path("plots", "covid19-deu-rki-entwicklung-original-skala.png"), p, width = 10, height = 6.66, dpi = 200, scale = 1.3)
 
 
