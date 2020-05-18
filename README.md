@@ -14,26 +14,26 @@ corona_rki %>%
   print(n = 16)
 ```
 
-    ## # A tibble: 1,194 x 6
+    ## # A tibble: 1,210 x 6
     ##    Datum      Bundesland      Fallzahl Todeszahl Fallzahl_neu Todeszahl_neu
     ##    <date>     <chr>              <dbl>     <dbl>        <dbl>         <dbl>
-    ##  1 2020-05-17 Baden-Württemb…    33950      1648           57             4
-    ##  2 2020-05-17 Bayern             45427      2283           87            10
-    ##  3 2020-05-17 Berlin              6447       182           19             1
-    ##  4 2020-05-17 Brandenburg         3171       149            2             0
-    ##  5 2020-05-17 Bremen              1164        37           14             0
-    ##  6 2020-05-17 Hamburg             5029       232           12             1
-    ##  7 2020-05-17 Hessen              9317       435           56             3
-    ##  8 2020-05-17 Mecklenburg-Vo…      748        20            2             0
-    ##  9 2020-05-17 Niedersachsen      11155       544           63             9
-    ## 10 2020-05-17 Nordrhein-West…    36286      1505          221             5
-    ## 11 2020-05-17 Rheinland-Pfalz     6449       216            0             0
-    ## 12 2020-05-17 Saarland            2696       149            8             0
-    ## 13 2020-05-17 Sachsen             5115       196           26            -1
-    ## 14 2020-05-17 Sachsen-Anhalt      1676        54            0             0
-    ## 15 2020-05-17 Schleswig-Hols…     3000       126            2             0
-    ## 16 2020-05-17 Thüringen           2725       138           14             1
-    ## # … with 1,178 more rows
+    ##  1 2020-05-18 Baden-Württemb…    34000      1652           50             4
+    ##  2 2020-05-18 Bayern             45507      2287           80             4
+    ##  3 2020-05-18 Berlin              6458       180           11            -2
+    ##  4 2020-05-18 Brandenburg         3172       149            1             0
+    ##  5 2020-05-18 Bremen              1171        38            7             1
+    ##  6 2020-05-18 Hamburg             5037       232            8             0
+    ##  7 2020-05-18 Hessen              9337       439           20             4
+    ##  8 2020-05-18 Mecklenburg-Vo…      752        20            4             0
+    ##  9 2020-05-18 Niedersachsen      11167       545           12             1
+    ## 10 2020-05-18 Nordrhein-West…    36365      1512           79             7
+    ## 11 2020-05-18 Rheinland-Pfalz     6490       217           41             1
+    ## 12 2020-05-18 Saarland            2696       149            0             0
+    ## 13 2020-05-18 Sachsen             5125       196           10             0
+    ## 14 2020-05-18 Sachsen-Anhalt      1678        54            2             0
+    ## 15 2020-05-18 Schleswig-Hols…     3002       126            2             0
+    ## 16 2020-05-18 Thüringen           2740       139           15             1
+    ## # … with 1,194 more rows
 
 Data is downloaded each day at 11am from the [website of the
 RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html)
