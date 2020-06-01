@@ -94,7 +94,7 @@ names(color_region) <- c("Norden", "Osten", "Süden", "Westen")
 plot_per_state <- function(yvar, title){
   
   # yvar <- "Fallzahl_neu_norm"
-  # title <- "nach Bundesland
+  # title <- "nach Bundesland"
  
   d_plot <- new_cases
   
@@ -103,7 +103,7 @@ plot_per_state <- function(yvar, title){
     geom_col() +
     facet_geo(~code, grid = de_grid, label = "name2") +
     scale_x_date(
-      breaks = seq(ymd("2020-03-09"), ymd(max(d_plot$Datum)), by = 14),
+      breaks = seq(ymd("2020-03-09"), ymd(max(d_plot$Datum)), by = 28),
       minor_breaks = seq(ymd("2020-03-04"), ymd(max(d_plot$Datum)), by = "days"),
       date_labels = "%d.%m.",
       expand = expansion(add = c(0,1))
@@ -120,7 +120,7 @@ plot_per_state <- function(yvar, title){
       panel.grid.minor.y = element_blank(),
       #axis.title.x = element_text(margin = margin(t = 0.5, unit = "lines")),
       axis.title.x = element_blank(),
-      axis.text.x = element_text(size = 8),
+      axis.text.x = element_text(size = 6),
       #axis.title.y = element_text(margin = margin(r = 0.5, unit = "lines")),
       axis.title.y = element_blank(),
       plot.title = element_markdown(),
